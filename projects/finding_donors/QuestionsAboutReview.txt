@@ -1,0 +1,24 @@
+Questions:
+
+Preparing the data:
+
+Good catch: 
+Replaced it with features_final = pd.get_dummies(features_log_minmax_transform)
+
+
+Evaluating Model Performance
+
+Use only default models with random_state for your selected models.
+Modified to use gini, which is the default
+clf_C = DecisionTreeClassifier(criterion="gini", random_state=0)
+
+Implementation: Initial Model Evaluation
+    Was surprised to see that the graphs were identical to how they were before. I am not sure why
+
+
+Feature Importance
+    I had explained about age/hours-per-week earlier. Were those observations innacurate?
+
+    If you were not close, why do you think these features are more relevant?
+        Added more notes to explain.
+
